@@ -9,54 +9,38 @@ var x = namesArray.toString();
 
 // first names  WORKING
 var firstNames = [];
+var a = [];
+var foo = [];
 
 for (var i = 0; i < namesArray.length; i++) {
-  var a = [];
   var y = namesArray[i].split(" ", 1);
   firstNames.push(y);
   a = firstNames.join("\n");
-  // console.log(a);
   // return a;
+  foo = a.split("\n");
 }
-console.log(a);
-
-// Names & Length of the Names WORKING
-var nameLengthList = "";
-for (var i = 0; i < namesArray.length; i++) {
-  nameLengthList += "name: " + namesArray[i] + ", length of name is " + namesArray[i].length + " characters.\n";
-};
-console.log(nameLengthList);
-
 
 // last names as a string adn first names as an array from this function.
 var lastNames = [];
 var firstNames = [];
 var p = "";
+var what = [];
 
 for (var i = 0; i < namesArray.length; i++) {
   var y = namesArray[i].split(" ", 1);
   p += namesArray[i].replace(y, "");
-  // firstNames.push(y);
-  // console.log(namesArray[i]);
-  // console.log(lastNames);
+  var t = p.trim();
+  var e = t.split(" ")
+  var f = e.splice(0, 2)
+  var o = f.join(" ");
+  e.unshift(o)
+  console.log(e);
 }
-console.log(p);
 
-
-p.trim();
-var t = p.trim();
-var h = t.split(" ");
-h.reverse();
-
-var re = [];
-var io = ""
-for (var i = 0; i < x.length; i++) {
-  var io = re.shift();
-  console.log(io);
-  // return io;
-};
-// console.log(firstNames);
-// console.log(lastNames);
-// console.log(p);
-
-
+// Names & Length of the Names WORKING
+var nameLengthList = "";
+var u = [];
+for (var i = 0; i < namesArray.length; i++) {
+  nameLengthList += "name: " + namesArray[i] + ", length of name is " + namesArray[i].length + " characters.\n";
+  u = nameLengthList.split(".");
+}

@@ -1,53 +1,54 @@
-
-// print First Names
-var printFirstNames = document.getElementById("printFirstNames");
-
-var firstNamesButton = document.getElementById("first-names").onclick = displayFirstNames;
-
-function displayFirstNames() {
-  var firstNameAnswer = document.createElement("LI");
-  firstNameAnswer.innerHTML = a;
-  printFirstNames.appendChild(firstNameAnswer);
-};
-
-//print all names
-var printAllNames = document.getElementById("printAllNames");
-
+// //print all names
+var namesHandle = document.getElementById("answer-list");
 var printAllNamesButton = document.getElementById("all-names").onclick = displayAllNames;
 
 function displayAllNames() {
-  var allNamesAnswer = document.createElement("LI");
-  allNamesAnswer.innerHTML = allNames;
-  printAllNames.appendChild(allNamesAnswer)
+  for (var i = 0; i < namesArray.length; i++) {
+    var q = document.createElement("li");
+    q.innerHTML = namesArray[i];
+    console.log(p);
+    namesHandle.appendChild(q);
+  }
 }
 
+// print First Names - not working
+var firstNamesButton = document.getElementById("first-names").onclick = displayFirstNames;
 
+function displayFirstNames() {
+  for (var i = 0; i < namesArray.length; i++) {
+    var q = document.createElement('li');
+    q.innerHTML = document.createElement("li");
+    q.innerHTML = foo[i];
+    console.log(p);
+    namesHandle.appendChild(q);
+  }
+}
 
 // Last Names
-var printLastNames = document.getElementById("printLastNames");
-
 var lastNamesButton = document.getElementById("last-names").onclick = displayLastNames;
 
+
 function displayLastNames() {
-  var lastNameAnswer = document.createElement("LI");
-  lastNameAnswer.innerHTML = p;
-  printLastNames.appendChild(lastNameAnswer);
+  for (var i = 0; i < namesArray.length; i++) {
+    var q = document.createElement('li');
+    q.innerHTML = document.createElement("li");
+    q.innerHTML = e[i];
+    console.log(q);
+    namesHandle.appendChild(q);
+  }
 }
-// (displayLastNames);
 
 
 // Names with lengths
-var printNamesWithLengths = document.getElementById("printNamesWithLengths");
-
 var namesLengthButton = document.getElementById("names-with-lengths").onclick = displayNamesWithLengths;
 
 function displayNamesWithLengths() {
-  var namesWithLengthsAnswer = document.createElement("LI");
-  namesWithLengthsAnswer.innerHTML = nameLengthList;
-  printNamesWithLengths.appendChild(namesWithLengthsAnswer);
+  for (var i = 0; i < namesArray.length; i++) {
+    var q = document.createElement('li');
+    q.innerHTML = document.createElement("li");
+    q.innerHTML = u[i];
+    console.log(q);
+    namesHandle.appendChild(q);
+  }
 }
-// displayNamesWithLengths();
-
-
-
 
